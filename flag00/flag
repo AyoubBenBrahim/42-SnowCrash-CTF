@@ -1,0 +1,18 @@
+
+
+in level00, use find +  discard errors
+check files belonging to the group level00
+find / -group flag00 2>/dev/null
+a trick learned in the video: Linux Essentials for Ethical Hackers (https://youtu.be/1hvVcEhcbLM min 1:23:33)
+
+cat /usr/sbin/john
+
+find / -user flag00  ==> cdiiddwpgswtgt
+Cipher Identifier ==>  ROT Cipher (ROT11) ==> nottoohardhere
+
+su flag00
+cat README.txt ==> Don't forget to launch getflag
+
+getflag
+Check flag.Here is your token : x24ti5gi3x0ol2eh4esiuxias
+su level01

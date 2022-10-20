@@ -1,0 +1,72 @@
+
+file — determine file type
+ file tests each argument in an attempt to classify it.
+
+
+
+cat /etc/passwd
+
+
+
+
+strace and ltrace provide a flood of information about system and library calls being made by Linux processes,
+ and sorting through it all can help discover the cause of problems.
+
+hexdump utility is a filter which displays the specified files, or the standard input, if no files are speci‐
+     fied, in a user specified format.
+
+Understanding the Linux filesystem and users
+Understanding the system and user crontabs
+Learning the important Linux commands and tools
+
+Reconnaissance / Information Gathering
+Before attacking any application or service, it is important to gather as much information as possible. The more information an attacker has,
+ the easier it will be to identify any misconfigurations and vulnerabilities.
+
+ reconnaissance section, you’ll learn:
+
+Identifying open ports on the machine
+Identifying services running on the machine
+Interacting with network services
+Fingerprinting different types of services
+Understanding service-specific misconfigurations
+Enumerating files/directories on web applications
+Scanning web application using popular scanners and identifying the entry points
+
+Enumeration is crucial in the reconnaissance phase of ethical hacking that allows a penetration tester to expose potential security flaws in an application.
+In the enumeration phase, the security team establishes an active connection with the webserver to gather information on users, hosts, networks, primary servers, and application configuration.
+
+There are three primary scopes when testing an application or service. 
+Your understanding of your target will determine the level of testing that you perform in your penetration testing engagement.
+ In this task, we'll cover these three different scopes of testing.
+
+Black-Box Testing:  the tester is not given any information about the inner workings of the application or service.
+Grey-Box Testing: a combination of both black-box and white-box testing processes. The tester will have some limited knowledge
+White-Box Testing: The tester will have full knowledge of the application 
+
+CTF 
+
+* Cryptography – Solving ciphers and code, ranging from classic ciphers (e.g., Caesar, transposition) to modern cryptography such as AES, 3DES, RC4 and Twofish.
+* Programming – Challenges which will require coding a solution in the computer language of your choice. Solving these manually would generally be too tedious or time-consuming.
+* OSINT (Open Source Intelligence) – Finding clues hidden on the public internet and social media platforms. Bring your best Google-fu to tackle these.
+* Reverse engineering – Studying a binary executable, malware sample, or other file to understand its intent or behavior.
+* Forensics – Analyzing log files, network packet captures or other artifacts to detect how a hacker infiltrated a system.
+* Steganography – The art and science of hiding (and detecting) messages in images, audio files and the like.
+
+
+
+
+locate "passwd" | grep "/etc/"
+locate "*.conf" | grep resolv
+find /etc -type f -name "*.conf"
+
+groups level00
+
+Each challenge you try to solve was created by a human. 
+Sharpen your tools
+If you routinely script things in Python, try writing a bash script (or vice versa).
+
+One way to better motivate and engage employees in training (security awareness) is through gamification.
+
+
+
