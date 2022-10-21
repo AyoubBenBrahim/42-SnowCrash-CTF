@@ -1,6 +1,8 @@
 check files belonging to the group level00
 in level00, use find while checking the files content using xargs +  discard errors
+
 find / -group level00 -type f 2>/dev/null | xargs file | grep -vi 'error\|link'
+
 a trick learned in the video: Linux Essentials for Ethical Hackers (https://youtu.be/1hvVcEhcbLM min 1:23:33)
 
 files were empty ( ex-cammand | grep -v 'empty')
