@@ -9,18 +9,23 @@ files were empty ( ex-cammand | grep -v 'empty')
 
 in the intra video there is a cat of a file content (README) instructs us to ==FIND== a file belonging to flag00 
 
+```
+cat README
+    FIND this first file who can run only as flag00...
+```
+
 same command applied to groupe flag00
 result: 
 `/usr/sbin/john:      ASCII text`
 
 `cat /usr/sbin/john` ==> cdiiddwpgswtgt
 
-Cipher Identifier ==>  ROT Cipher (ROT11) ==> `nottoohardhere`
+[Cipher Identifier](https://www.dcode.fr/cipher-identifier) ==>  [ROT Cipher](https://www.dcode.fr/rot-cipher) (ROT11) ==> `nottoohardhere`
 
 su flag00
 
 getflag
 
-Here is your token : x24ti5gi3x0ol2eh4esiuxias
+Here is your token : **x24ti5gi3x0ol2eh4esiuxias**
 
 `su level01`

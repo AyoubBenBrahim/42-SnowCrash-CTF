@@ -8,6 +8,31 @@ first thing to notice when `ls`-ing the dir are the file permissions:
 **owner**: has read, write, [SUID permissions](https://www.zzee.com/solutions/linux-permissions.shtml)
 **group**: read and SGID permissions
 
-```the setguid bit set = if the file were executed, that it would be run with the effective rights of the group owner (instead of that of the user who executed it). On a directory, the setgid bit means that, if a file is created in the directory, its group-owner would be that of the directory (instead of that of the user who created it).```
+```
+
+the setguid bit set = if the file were executed, that it would be 
+run with the effective rights of the group owner (instead of that of
+the user who executed it) aka : you inherit the permissions of that 
+program's owner.
+
+On a directory, the setgid bit means that, if a file is created in 
+the directory, its group-owner would be that of the directory 
+(instead of that of the user who created it).   
+
+```
+[StackOverflow](https://stackoverflow.com/questions/9129959/how-to-set-a-file-to-this-drwxrwsrwx-permission-on-ubuntu#:~:text=The%20group%20owner%20permissions%20in,is%20the%20s%20in%20rws%20)
 
 if we execute `./level03`, it outputs the msg: `Exploit me`
+
+```
+strings level03
+    /usr/bin/env echo Exploit me
+```
+       strings - print the strings of printable characters in files.
+
+
+
+
+
+`return system("/usr/bin/env echo Exploit me");`
+
