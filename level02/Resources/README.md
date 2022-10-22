@@ -19,6 +19,7 @@ Analyze -> Follow -> TCP stream
 copy the section after the occurance of "Passw ord" which states in plain Text format:
 
 `ft_wandr...NDRel.L0L`
+
 choose option -> show data as Hex Dump: 
 
 `66 74 5f 77 61 6e 64 72 7f 7f 7f 4e 44 52 65 6c 7f 4c 30 4c 0d`
