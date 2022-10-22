@@ -15,6 +15,7 @@ scp $HOME/Desktop/snow-crash/level02/Resources/level02.pcap mohamed@10.12.100.19
 To load a PCAP file in Wireshark, open Wireshark and in the menu bar, click ‘File’, then click ‘Open’ and navigate to the file’s location, then click ‘Open.’
 
 Analyze -> Follow -> TCP stream 
+
 copy the section after the occurance of "Passw ord" which states in plain Text format:
 
 `ft_wandr...NDRel.L0L`
