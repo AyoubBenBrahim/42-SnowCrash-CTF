@@ -1,3 +1,6 @@
+ssh level01@10.12.100.98 -p 4242
+pwd: x24ti5gi3x0ol2eh4esiuxias
+
 while looking for flag00 in level00
 ```
 cat /etc/passwd

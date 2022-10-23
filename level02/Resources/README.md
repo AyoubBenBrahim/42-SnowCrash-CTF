@@ -1,4 +1,7 @@
 
+ssh level02@10.12.100.98 -p 4242
+pwd: f2av5il02puano7naaf6adaaf
+
 on the host machine:
 ```
 scp -P 4242 level02@10.12.100.237:/home/user/level02/level02.pcap $HOME/Desktop/snow-crash/level02/Resources

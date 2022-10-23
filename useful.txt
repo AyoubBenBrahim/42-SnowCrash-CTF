@@ -1,19 +1,14 @@
 
 file — determine file type
- file tests each argument in an attempt to classify it.
 
+strings - print the strings of printable characters in files.
 
-
-cat /etc/passwd
-
-
-
-
+Tracing technology: ltrace and strace
 strace and ltrace provide a flood of information about system and library calls being made by Linux processes,
  and sorting through it all can help discover the cause of problems.
+intercepts library calls and system calls made by your application to C libraries
 
-hexdump utility is a filter which displays the specified files, or the standard input, if no files are speci‐
-     fied, in a user specified format.
+hexdump utility is a filter which displays the specified files, or the standard input, if no files are specified, in a user specified format.
 
 Understanding the Linux filesystem and users
 Understanding the system and user crontabs
