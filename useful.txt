@@ -55,8 +55,6 @@ locate "passwd" | grep "/etc/"
 locate "*.conf" | grep resolv
 find /etc -type f -name "*.conf"
 
-groups level00
-
 Each challenge you try to solve was created by a human. 
 Sharpen your tools
 If you routinely script things in Python, try writing a bash script (or vice versa).
