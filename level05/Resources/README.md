@@ -32,7 +32,17 @@ ulimit is a built-in Linux shell command that allows viewing or limiting system 
 bash -x: The -x option starts a BASH shell in tracing mode.
 	run the entire script in debug mode. Traces of each command
 
- echo "getflag > /tmp/flag"
-watch cat /tmp/flag
+googling: `for every file in directory bash` will output similar results
+
+**so the script loops over a directory, executes it then removes it.**
+
+we can exploit that
+
+ 
+ vim /opt/openarenaserver/exec_this
+  getflag > /tmp/flag
+ 
+ watch cat /tmp/flag
 
 
+token : viuaaale9huek52boumoomioc
