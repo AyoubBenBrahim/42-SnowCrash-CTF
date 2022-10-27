@@ -1,6 +1,23 @@
 
 as usual: su level05
-Reconnaissance, Enumeration, nothing interesting encountered
+Reconnaissance, Enumeration
+
+```
+level05@SnowCrash:~$ find / -user flag05 2>/dev/null | xargs file
+/usr/sbin/openarenaserver:      POSIX shell script, ASCII text executable
+/rofs/usr/sbin/openarenaserver: regular file, no read permission
+```
+
+```
+level05@SnowCrash:~$ find / -type f 2>/dev/null | xargs grep '/usr/sbin/openarenaserver' 2>/dev/null
+Binary file /proc/28098/task/28098/cmdline matches
+Binary file /proc/28098/cmdline matches
+/var/mail/level05:*/2 * * * * su -c "sh /usr/sbin/openarenaserver" - flag05
+/rofs/var/mail/level05:*/2 * * * * su -c "sh /usr/sbin/openarenaserver" - flag05
+```
+
+**second method:**
+
 
 ssh level05@10.12.100.98 -p 4242
 level05's password: ne2searoevaevoem4ov4ar8ap
