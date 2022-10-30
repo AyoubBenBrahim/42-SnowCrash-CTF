@@ -62,4 +62,7 @@ If you routinely script things in Python, try writing a bash script (or vice ver
 One way to better motivate and engage employees in training (security awareness) is through gamification.
 
 
+https://www.hackingarticles.in/penetration-testing/
+
+
 

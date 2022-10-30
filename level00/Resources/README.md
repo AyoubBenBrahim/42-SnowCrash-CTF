@@ -1,3 +1,6 @@
+level00
+pwd: level00
+
 check files belonging to the group level00
 in level00, use find while checking the files content using xargs +  discard errors
 

@@ -1,11 +1,19 @@
 
 as usual: su level05
+password: ne2searoevaevoem4ov4ar8ap
+
 Reconnaissance, Enumeration
 
 ```
 level05@SnowCrash:~$ find / -user flag05 2>/dev/null | xargs file
 /usr/sbin/openarenaserver:      POSIX shell script, ASCII text executable
 /rofs/usr/sbin/openarenaserver: regular file, no read permission
+```
+
+or 
+```
+level05@SnowCrash:~$ find / -user flag05 -readable 2>/dev/null
+/usr/sbin/openarenaserver
 ```
 
 ```
