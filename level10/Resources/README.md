@@ -19,12 +19,12 @@ wrote file!
 You don't have access to %s
 ```
 
-
+```
 echo "test" > /tmp/test
 level10@SnowCrash:~$ ./level10 /tmp/test 10.12.10.14
 Connecting to 10.12.10.14:6969 .. Connected!
 Sending file .. wrote file!
-
+```
 on the host:
 ```
 nc -l 6969
