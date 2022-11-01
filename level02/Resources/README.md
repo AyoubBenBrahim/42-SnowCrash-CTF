@@ -36,6 +36,9 @@ choose option -> show data as Hex Dump:
 
 copy into a [Hex decoder](https://cryptii.com/pipes/hex-decoder)
 
+or just
+man ascii | grep -i 7f ==> 7F    DEL
+
 ft_wandr:x::x::x:NDRel:x:L0L ==> `ft_waNDReL0L`
 
 su flag02

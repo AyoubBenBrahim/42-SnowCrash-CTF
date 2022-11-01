@@ -1,3 +1,6 @@
+TOCTTOU / race conditions 
+
+
 ssh level10@ip -p 4242
 password: s5cAJpM8ev6XHw998pRWG728z
 

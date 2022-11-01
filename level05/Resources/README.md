@@ -63,7 +63,6 @@ googling: `for every file in directory bash` will output similar results
 
 we can exploit that
 
- 
  vim /opt/openarenaserver/exec_this
   getflag > /tmp/flag
  
