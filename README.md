@@ -14,3 +14,11 @@ This project aims to make you discover, through several little challenges, cyber
 You will use more or less complex methods that will give you a new perspective on IT in general.
 You will reach some stalemate during this project. You will have to surpass them yourself. You must be the one and ONLY key to the locked doors you will face. 
 This project aims to develop some logic thinking you will learn for good and use in the future.
+
+Nebula Exploit Exercises 
+
+https://craftware.xyz/ctf/2012/07/21/Nebula-wargame-walkthrough.html
+
+https://www.youtube.com/playlist?list=PLqM63j87R5p7en-xY3UMSWW1dryPq3p4T
+
+https://0x00sec.org/tag/nebula
