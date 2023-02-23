@@ -28,13 +28,13 @@ This project aims to develop some logic thinking you will learn for good and use
 
 It will test your knowledge in:
 
-UNIX based systems
+-UNIX based systems
 
-Different programming languages such as ASM, Perl, Lua, PHP
+-Different programming languages such as ASM, Perl, Lua, PHP
 
-Network packet data analysis
+-Network packet data analysis
 
-Shell scripting
+-Shell scripting
 
 sources:
 
