@@ -1,5 +1,5 @@
 
-Description
+**Description
 
 This project is an introduction to computer security.
 
@@ -17,7 +17,7 @@ It is your duty to understand the different techniques used to exploit these wea
 
 This project is a modest introduction to the wide world of cyber security. A world where you’ll have no margin for errors.
 
-Objectives
+**Objectives
 
 This project aims to make you discover, through several little challenges, cyber security in various fields.
 
@@ -28,13 +28,13 @@ This project aims to develop some logic thinking you will learn for good and use
 
 It will test your knowledge in:
 
--UNIX based systems
+    -UNIX based systems
 
--Different programming languages such as ASM, Perl, Lua, PHP
+    -Different programming languages such as ASM, Perl, Lua, PHP
 
--Network packet data analysis
+    -Network packet data analysis
 
--Shell scripting
+    -Shell scripting
 
 sources:
 
